@@ -44,4 +44,17 @@ sudo supervisorctl status
 
 <Your APP is live now>
 ```
+=============================================================
 
+Alternatively you can pipe the data into mysql from the command line:
+
+mysql -p < simple-model.sql
+and
+mysql -p < simple-data.sql
+
+
+
+If the file doesn't specify a database then you will also need to add that:
+mysql db_name < yourfile.sql
+
+=============================================================
